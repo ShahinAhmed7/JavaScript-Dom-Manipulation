@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    
+   <style>
+       :root{
+           --bg-gray: #ddd;
+           --padding-top: 20px;
+       }
+       body{
+           background:var(--bg-gray);
+       }
+       .header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background: #2a626b;
+        }
+
+        .menu {
+            text-align: right;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .main-content img {
+            width: 100%;
+        }
+        .card{
+            margin-top: 30px;
+        }
+        .card h1 {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .card p {
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        background: #2a626c;
+        color: #fff;
+        font-size: 20px;
+    }
+   </style>
+
+    <h1>Dom Manipulation</h1>
+    <div id="app"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
